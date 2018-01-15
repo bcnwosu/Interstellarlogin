@@ -1,0 +1,96 @@
+
+html {
+	height: 100%;	
+}
+
+@font-face {
+	font-family:Anurati-Regular;
+	src: url("Anurati-Regular.otf");
+	
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-image: url("Earth.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#here {
+	opacity: 1;
+	animation: fadein2 5s ease-in;
+}
+
+/*.info {
+	width: 400px;
+	opacity: 0;
+	transition: all 100ms ease-in;
+}*/
+
+.fade {
+		
+		animation: fadein 3s ease-in;
+}
+
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+	
+}
+
+.fade2 {
+		animation: fadein2 3s ease-in;
+}
+
+@keyframes fadein2 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+	
+
+input { 
+	width: 10%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,1), 0 1px 1px rgba(255,255,255,1); 
+
+}
+
+input:hover { box-shadow: inset 0 -5px 45px rgba(100,100,100,1), 0 1px 1px rgba(255,255,255,1); 
+
+}
+
+input:active {
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff;
+}
+
+#login:hover {
+	cursor: pointer;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff;
+}
